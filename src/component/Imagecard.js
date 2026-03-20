@@ -1,12 +1,16 @@
+// //props = properties
+// 1. pass props to function parameter and get props.name or props.imagelink
+// 2. destructure props in function parameter and get name and imageLink directly
 
+function Imagecard({name, imgLink}) {
+    console.log("This is the Imagecard component");
 
-function Imagecard(){
-    console.log("this is imagecard component");
-    return(
-        <div>
-            <h2>Tanima Nag</h2>
-           <img src="https://avatars.githubusercontent.com/u/171805697?s=96&v=4" alt="placeholder"></img>
-        </div>
+    return (
+        <>
+            <h2>{name}</h2>
+            <img src={imgLink} alt="placeholder" />
+        </>
     );
 }
+
 export default Imagecard;
