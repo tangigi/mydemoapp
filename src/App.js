@@ -1,23 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import CartCounter from "./Component/CartCounter";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          This is my feature branch code change. I am learning how to use git and github
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React with Edusite
-        </a>
-      </header>
+      <CartCounter />
     </div>
   );
 }
