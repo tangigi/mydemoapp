@@ -2,7 +2,7 @@ import { useState } from "react";
 import { userData } from "../constants/constant";
 import Imagecard from "./Imagecard";
 
-const CardList = ({placeholder}) => {
+const CardList = () => {
 
   const [showFlag, setShowFlag] = useState(false);
 
@@ -18,7 +18,7 @@ const CardList = ({placeholder}) => {
 
             <Imagecard
               name={user.name}
-              imgLink={`https://avatars.githubusercontent.com/u/${user.githubId}?v=4`} placeholder={placeholder}
+              imgLink={`https://avatars.githubusercontent.com/u/${user.githubId}?v=4`}
             />
 
             {/* conditional rendering */}
