@@ -1,0 +1,54 @@
+.shimmer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  padding: 20px;
+}
+
+.shimmer-card {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.shimmer-image {
+  height: 150px;
+  background-color: #e8e8e8;
+}
+
+.shimmer-content {
+  padding: 12px;
+}
+
+.shimmer-text {
+  height: 12px;
+  background-color: #e8e8e8;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
+.shimmer-title {
+  height: 14px;
+  margin-bottom: 10px;
+}
+
+.shimmer-short {
+  width: 60%;
+  margin-bottom: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .shimmer-container {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 12px;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .shimmer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
